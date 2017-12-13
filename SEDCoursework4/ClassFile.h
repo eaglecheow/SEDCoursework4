@@ -1,3 +1,12 @@
+/*
+The class choosen were User as base class, derived to Admin and Consumer class. The Admin class are then
+derived to Principal (who have the most function access), Moderator (who can only edit and delete contents) and 
+ContentCreator (who can only create contents). The Consumer class is derived to PremiumUser (who can read premium contents) 
+and BasicUser (who can read only basic content)
+
+This choice of classes can be used in most cases like some sort of general forums where the admins has access to content creating
+and editing, and consumers with different previleage in reading contents
+*/
 #pragma once
 #include <string>
 #include <iostream>
