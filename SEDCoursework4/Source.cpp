@@ -13,6 +13,7 @@ vector<User>userList;
 void Menu();
 void AccessFeature(User selectedUser);
 
+/*This funvtion creates User (derived classes) and saves to userList vector*/
 void CreateUser()
 {
 	cout << "Create a user... " << endl;
@@ -74,6 +75,7 @@ void CreateUser()
 	Menu();
 }
 
+/*This funtion loops through the userList and shows all the username available*/
 void ShowUser()
 {
 	for (User &user : userList)
@@ -84,6 +86,7 @@ void ShowUser()
 	Menu();
 }
 
+/*This function logins the user and enable user to access features*/
 void Login()
 {
 	string username;
@@ -121,6 +124,7 @@ void Login()
 	}
 }
 
+/*This function allows user to access features after logging in*/
 void AccessFeature(User selectedUser)
 {
 	bool quitToMenu = false;
@@ -336,6 +340,7 @@ void AccessFeature(User selectedUser)
 	Menu();
 }
 
+/*This function shoews the menu and allows user to choose functions to use.*/
 void Menu()
 {
 	cout << "Please select a function : " << endl;

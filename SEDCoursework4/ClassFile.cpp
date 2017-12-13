@@ -1,3 +1,4 @@
+//Functions declared in the header file, refer to header file for more details
 #include "ClassFile.h"
 
 User::User()
@@ -141,11 +142,6 @@ void Principal::EditContent(string content)
 void Principal::DeleteContent()
 {
 	cout << "Content deleted" << endl;
-}
-
-void Principal::DeleteUser(string username)
-{
-	//Delete user
 }
 
 Moderator::Moderator() : Admin()
